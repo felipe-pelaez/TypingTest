@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+
+body {
+  font-family: "karla";
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(12,195,141);
+  background: linear-gradient(90deg, rgba(12,195,141,1) 0%, rgba(157,12,156,1) 35%, rgba(109,56,186,1) 55%, rgba(0,155,255,1) 100%);
+  color:#575252
+}
+
+.nav div
+{
+  background-color: #F4F4F4;
+  height:70%;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  width: 12vw;
+  justify-content:space-around;
+  cursor:pointer
+}
+
+.leng div
+{
+  height: 4vw;
+  color:#222222
+}
+.time div
+{
+  height: 4vw;
+  color:#222222
+}
+
+.rotate {
+  animation-name: rotate-up;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.animacion {
+  animation-name: rotate-down;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-up {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotate-down {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.text.dark
+{
+  color: white !important;
+  background-color: #222222 !important;
+}
+.nav.dark
+{
+  background-color: #222222 !important;
+}
+
+.speed.dark
+{
+  color: #222222 !important;
+  background-color: white !important;
+}
+
+
+input.dark
+{
+  color: white !important;
+  background-color: #222222 !important;
+}
+
+
+body.dark {
+  background: rgb(8, 131, 96);
+  background: linear-gradient(90deg, rgba(8, 131, 96, 1) 0%, rgba(95, 8, 92, 1) 35%, rgba(67, 34, 116, 1) 55%, rgba(0, 102, 170, 1) 100%);
+}
